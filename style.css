@@ -1,0 +1,642 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lexend Exa';
+    color:rgb(235, 224, 224);
+    background-color: #04052b;
+    font-size: 16px;
+    line-height: 1.6rem;
+
+    background-image: url('images/MicrosoftTeams-image__6_-removebg-maior.png'), 
+    url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+   text-decoration: none; 
+   font-weight: 700;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+/** HEADER **/
+main #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+
+nav { 
+    display: flex; 
+    align-items: flex-end; 
+    padding: 20px 0 20px; 
+}
+
+
+.logo { 
+    cursor: pointer; 
+    width: 150px;
+    margin: 25px; 
+}
+
+
+nav ul li { 
+    display: inline-block; 
+    margin: 0 30px; 
+    cursor: pointer; 
+}
+
+nav a {
+    color: rgb(235, 224, 224);
+}
+
+.content { /* BACKGROUND */
+    background-image: url('images/sabrina-fundo-site.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/** INTRO **/
+#intro {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+#intro header {
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+#intro header h1 {
+    font-family: 'Lexend Exa';
+}
+
+/** AUDIO **/
+#audio audio {
+    width: 800px;
+    height: 70px ;
+    filter: invert(1%) opacity(50%);
+}
+
+#audio {
+    width: 100%;
+    height: 80px ;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 230, 243);
+    filter: invert(1%) opacity(50%);
+}
+
+/** SECTION - GENERAL **/
+#one, #two {
+    height: 43.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#meta, #apoie, #patrocinio {
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+
+/** SECTION - ONE **/
+#one { 
+    display: flex;
+    flex-direction: row;
+
+}
+
+#one img {
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 100px;
+    width: 300px;
+    z-index: -1;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#one img:hover{
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.one-text {
+    width: 550px;
+    margin: auto;
+    font-size: 1rem;
+    color: rgb(235, 224, 224);
+}
+
+.one-text p {
+    margin-bottom: 0.9rem;
+}
+
+.one-text h1 {
+    margin-bottom: 1.2rem;
+}
+
+.one-text h1:hover {
+    -webkit-animation: flip-scale-up-ver 0.5s linear both;
+    animation: flip-scale-up-ver 0.5s linear both;
+}
+
+
+/** SECTION - TWO-Quem **/
+#two {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(58, 31, 9, 0.616) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+
+.gallery img:active{
+	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+  
+.gallery-col-2 {
+    grid-column: span 2;
+}
+  
+  .gallery-row-2 {
+    grid-row: span 2;
+}
+
+.two-text {
+    width: 550px;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: rgb(235, 224, 224);
+}
+
+.two-text p {
+    margin-bottom: 0.9rem;
+    margin-top: 1rem;
+}
+
+.two-text h1 {
+    margin-bottom: 1.2rem;
+}
+
+.two-text h2 {
+    margin-top: 4rem;
+}
+
+/* SECTION - META */
+#meta, #patrocinio {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    color:#ffffff;
+}
+
+#meta-table, #patrocinio-table {
+    display: grid;
+    grid-template-columns: repeat(3, 17.5rem);
+    height: 12.5rem;
+    line-height: 2.5rem;
+
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+#meta-table img, #patrocinio-table img{
+    margin-top: 0.7rem;
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+/* SECTION - APOIE */
+#apoie, #patrocinio {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    line-height: 2.5rem;
+
+    color:#ffffff;
+}
+
+#apoie-table {
+    display: grid;
+    grid-template-columns: repeat(4, 17.5rem);
+    column-gap: 4rem;
+    height: 16.5rem;
+    line-height: 2rem;
+
+    font-size: 1.1rem;
+
+    margin-top: 2rem;
+}
+
+#apoie-table div {
+    background-color: rgba(154, 135, 206, 0.24);
+    border-radius: 3rem;
+
+    box-shadow: rgba(27, 21, 21, 0.35) 0px 5px 15px;
+}
+
+
+#apoie .button {
+    margin-top: 4rem;
+}
+
+.button a {
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: rgb(240, 230, 230)
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(151, 129, 211, 0.521);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+/* PATROCINIO */
+#patrocinio-table {
+    display: grid;
+    grid-template-columns: repeat(5, 17.5rem);
+    column-gap: 2rem;
+    height: 12.5rem;
+    line-height: 2.5rem;
+
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+
+#apoie-table h1 {
+    margin-top: 2rem;
+}
+
+#footer {
+    background-image: url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+}
+
+#footer ul{
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+#footer img {
+    width: 5rem;
+    padding: 1rem;
+}
+
+#footer img:hover {
+    -webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+/* KEYFRAMES */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+  /**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+ /**
+ * ----------------------------------------
+ * animation flip-vertical-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  
+  /**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+  /**
+ * ----------------------------------------
+ * animation flip-vertical-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  
+
+ /** MEDIA QUERY **/
+@media only screen and (max-width: 1200px) and (min-width: 240px){
+
+    #intro {
+        background-image: url('images/MicrosoftTeams-image__6_-removebg.png'), 
+        url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+
+    main #header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .logo { 
+        cursor: pointer; 
+        width: 110px;
+        margin: 10px; 
+    }
+
+    #one img {
+        width: 200px;
+    }
+
+
+    #one, #two, #meta, #apoie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #one, #two, #apoie {
+        height: 65rem;
+    }
+
+    /** AUDIO **/
+    #audio audio {
+        width: 350px;
+        height: 70px ;
+    }
+
+    #one img {
+        margin: 5rem 0;
+    }
+
+    .one-text, .two-text {
+        max-width: 300px;
+        font-size: 0.8rem;
+    }
+
+    .two-text {
+        margin: 2rem;
+    }
+
+
+
+    #meta {
+        height: 40rem;
+        margin-top: 0;
+        justify-content: start;
+    }
+
+   
+   #apoie {
+        height: 38rem;
+    }
+
+    #patrocinio {
+        height: 60rem;
+        justify-content: start;
+        margin-top: 10rem;
+        margin: 10rem 2rem;
+    }
+
+    #meta-table {
+        display: flex;
+        flex-direction: column;
+   }
+
+
+    #apoie-table {
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(2, 15rem);
+        column-gap: 1rem;
+
+        font-size: 0.8rem;
+    }
+
+    #apoie-table div, #meta-table div {
+        margin-bottom: 2rem;
+    }
+
+    #apoie .button {
+        margin-top: 15rem;
+    }
+
+    #patrocinio-table {
+        display: grid;
+        grid-template-columns: repeat(1, 17.5rem);
+        grid-template-rows: repeat(4,12rem);
+    
+        font-size: 1rem;
+    }
+    
+    #footer ul{
+        height: 4rem;
+    }
+
+    #footer img {
+        width: 4rem;
+        padding: 1rem;
+    }
+
+
+}
+
+/** MEDIA QUERY 
+@media only screen and (max-width: 641px) and (min-width: 240px){
+
+} **/
