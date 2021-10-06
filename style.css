@@ -357,7 +357,7 @@ nav a {
 /* PATROCINIO */
 #patrocinio-table {
     display: grid;
-    grid-template-columns: repeat(5, 17.5rem);
+    grid-template-columns: repeat(3, 17.5rem);
     column-gap: 2rem;
     height: 12.5rem;
     line-height: 2.5rem;
@@ -374,6 +374,11 @@ nav a {
 
 #footer {
     background-image: url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #footer ul{
@@ -588,7 +593,7 @@ nav a {
     }
 
     #patrocinio {
-        height: 60rem;
+        height: 40rem;
         justify-content: start;
         margin-top: 10rem;
         margin: 10rem 2rem;
@@ -619,7 +624,7 @@ nav a {
     #patrocinio-table {
         display: grid;
         grid-template-columns: repeat(1, 17.5rem);
-        grid-template-rows: repeat(4,12rem);
+        grid-template-rows: repeat(3,12rem);
     
         font-size: 1rem;
     }
