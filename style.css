@@ -81,18 +81,29 @@ nav a {
 
 /** INTRO **/
 #intro {
-    height: 550px;
+    height: 35rem;
     display: flex;
     justify-content: center;
+    text-align: left;
+    line-height: 3rem;
 }
 
 #intro header {
+    height: 18rem;
     font-size: 50px;
-    margin-top: 20%;
+    margin-top: 15%;
+    opacity: 0.5;
+    transition: opacity 5s;
 }
 
 #intro header h1 {
     font-family: 'Lexend Exa';
+    font-size: 3rem;
+}
+
+#intro header p {
+    font-family: 'Lexend Exa';
+    font-size: 1.5rem;
 }
 
 /** AUDIO **/
@@ -518,6 +529,9 @@ nav a {
   }
   
 
+  
+  
+
  /** MEDIA QUERY **/
 @media only screen and (max-width: 1200px) and (min-width: 240px){
 
@@ -527,6 +541,24 @@ nav a {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+
+    #intro header {
+        padding: 1rem;
+    }
+
+    #intro header h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+    
+    #intro header p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    #intro .button {
+        margin: 1rem;
     }
     
 

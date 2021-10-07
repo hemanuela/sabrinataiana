@@ -9,7 +9,7 @@ To build a single page site, a kind of landing page to promote a new local artis
 
 ### Screenshot
 
-![](https://github.com/hemanuela/sabrinataiana/tree/main/images/screenshot-stsite.jpg)
+![](https://github.com/hemanuela/sabrinataiana/blob/main/images/screenshot-stsite.jpg)
 
 
 
