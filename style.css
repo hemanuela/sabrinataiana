@@ -15,8 +15,8 @@ body {
     font-size: 16px;
     line-height: 1.6rem;
 
-    background-image: url('images/MicrosoftTeams-image__6_-removebg-maior.png'), 
-    url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+    background-image: url('images/background_site_desktop_ST.svg'), 
+    url('images/background_site_desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -72,7 +72,7 @@ nav a {
 }
 
 .content { /* BACKGROUND */
-    background-image: url('images/sabrina-fundo-site.png');
+    background-image: url('images/sabrina-fundo-site.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -384,7 +384,7 @@ nav a {
 }
 
 #footer {
-    background-image: url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+    background-image: url('images/background_site_desktop.svg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,8 +536,8 @@ nav a {
 @media only screen and (max-width: 1200px) and (min-width: 240px){
 
     #intro {
-        background-image: url('images/MicrosoftTeams-image__6_-removebg.png'), 
-        url('images/MicrosoftTeams-image__6_-removebg-maior-fundo.png');
+        background-image: url('images/background_site_mobile_ST.svg'), 
+        url('images/sabrina-fundo-site.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
