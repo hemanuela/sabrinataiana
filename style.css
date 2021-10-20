@@ -368,7 +368,6 @@ nav a {
 /* PATROCINIO */
 #patrocinio-table, #apoio-table {
     display: grid;
-    grid-template-columns: repeat(3, 17.5rem);
     column-gap: 2rem;
     height: 12.5rem;
     line-height: 2.5rem;
@@ -377,6 +376,10 @@ nav a {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#patrocinio-table {
+    grid-template-columns: repeat(3, 17.5rem);
 }
 
 #apoio-table {
