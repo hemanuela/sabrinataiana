@@ -368,7 +368,7 @@ nav a {
 /* PATROCINIO */
 #patrocinio-table, #apoio-table {
     display: grid;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     height: 12.5rem;
     line-height: 2.5rem;
 
