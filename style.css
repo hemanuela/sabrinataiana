@@ -379,8 +379,12 @@ nav a {
     margin-bottom: 2rem;
 }
 
+#apoio-table {
+    grid-template-columns: repeat(4, 17.5rem);
+}
+
 #apoio-table img {
-    width: 10rem;
+    width: 12rem;
     border-radius: 2rem;
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -633,8 +637,8 @@ nav a {
         height: 38rem;
     }
 
-    #patrocinio, #apoio {
-        height: 40rem;
+    #patrocinio {
+        height: 44rem;
         justify-content: start;
         margin-top: 10rem;
         margin: 10rem 2rem;
@@ -662,12 +666,32 @@ nav a {
         margin-top: 15rem;
     }
 
-    #patrocinio-table, #apoio-table {
+    #patrocinio-table {
         display: grid;
         grid-template-columns: repeat(1, 17.5rem);
-        grid-template-rows: repeat(3,12rem);
+        grid-template-rows: repeat(4,12rem);
     
         font-size: 1rem;
+    }
+
+    #apoio {
+        height: 35rem;
+        justify-content: start;
+    }
+
+    #apoio-table {
+        display: grid;
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(2,12rem);
+   
+        font-size: 1rem;
+    }
+
+    #apoio-table img {
+        width: 100%;
+        border-radius: 2rem;
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     
     #footer ul{
