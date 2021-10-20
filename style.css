@@ -252,7 +252,7 @@ nav a {
     color:#ffffff;
 }
 
-#meta-table, #patrocinio-table, #apoio-table {
+#meta-table {
     display: grid;
     grid-template-columns: repeat(3, 17.5rem);
     height: 12.5rem;
@@ -263,7 +263,7 @@ nav a {
     margin-top: 2rem;
 }
 
-#meta-table img, #patrocinio-table{
+#meta-table img, #patrocinio-table {
     margin-top: 0.7rem;
     -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
     animation: pulsate-fwd 0.5s ease-in-out infinite both;
