@@ -388,7 +388,7 @@ nav a {
 
 #apoio-table {
     grid-template-columns: repeat(4, 17.5rem);
-    height: 20rem;
+    height: 35rem;
 }
 
 #apoio-table img {
