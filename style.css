@@ -373,7 +373,7 @@ nav a {
 #patrocinio-table, #apoio-table {
     display: grid;
     column-gap: 1.5rem;
-    height: 12.5rem;
+    height: 22.5rem;
     line-height: 2.5rem;
 
     font-size: 1.5rem;
