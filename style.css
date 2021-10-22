@@ -141,7 +141,6 @@ nav a {
 #one { 
     display: flex;
     flex-direction: row;
-
 }
 
 #one img {
@@ -300,7 +299,7 @@ nav a {
 
 
 #apoie .button {
-    margin-top: 4rem;
+    margin: 4rem 0 8rem 0;
 }
 
 .button a {
@@ -364,6 +363,11 @@ nav a {
     border-radius: 10px;
 }
 
+#intro .button {
+    -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+    animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
 
 /* PATROCINIO */
 #patrocinio-table, #apoio-table {
@@ -384,6 +388,7 @@ nav a {
 
 #apoio-table {
     grid-template-columns: repeat(4, 17.5rem);
+    height: 20rem;
 }
 
 #apoio-table img {
@@ -544,7 +549,40 @@ nav a {
     }
   }
   
-
+/**
+ * ----------------------------------------
+ * animation pulsate-bck
+ * ----------------------------------------
+ */
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
   
   
 
@@ -678,14 +716,14 @@ nav a {
     }
 
     #apoio {
-        height: 35rem;
+        height: 51rem;
         justify-content: start;
     }
 
     #apoio-table {
         display: grid;
         grid-template-columns: repeat(2, 10rem);
-        grid-template-rows: repeat(2,12rem);
+        grid-template-rows: repeat(4,10rem);
    
         font-size: 1rem;
     }
