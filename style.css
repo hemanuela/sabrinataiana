@@ -373,7 +373,7 @@ nav a {
 #patrocinio-table, #apoio-table {
     display: grid;
     column-gap: 1.5rem;
-    height: 32.5rem;
+    height: 36.5rem;
     line-height: 2.5rem;
 
     font-size: 1.5rem;
@@ -719,14 +719,14 @@ nav a {
     }
 
     #apoio {
-        height: 70rem;
+        height: 80rem;
         justify-content: start;
     }
 
     #apoio-table {
         display: grid;
         grid-template-columns: repeat(2, 10rem);
-        grid-template-rows: repeat(6,10rem);
+        grid-template-rows: repeat(7,10rem);
    
         font-size: 1rem;
     }
