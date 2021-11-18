@@ -81,11 +81,12 @@ nav a {
 
 /** INTRO **/
 #intro {
-    height: 35rem;
+    height: 37rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     text-align: left;
     line-height: 3rem;
+    margin-left: 15rem;
 }
 
 #intro header {
@@ -105,6 +106,11 @@ nav a {
     font-family: 'Lexend Exa';
     font-size: 1.5rem;
 }
+
+
+/** VIDEO **/
+
+
 
 /** AUDIO **/
 #audio audio {
@@ -598,7 +604,11 @@ nav a {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+
+        justify-content: center;
+        margin-left: 0;
     }
+
 
     #intro header {
         padding: 1rem;
