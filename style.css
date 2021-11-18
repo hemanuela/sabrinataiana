@@ -89,7 +89,7 @@ nav a {
     margin-left: 15rem;
 }
 
-#intro header {
+/**#intro header {
     height: 18rem;
     font-size: 50px;
     margin-top: 15%;
@@ -105,7 +105,7 @@ nav a {
 #intro header p {
     font-family: 'Lexend Exa';
     font-size: 1.5rem;
-}
+}**/
 
 
 /** VIDEO **/
