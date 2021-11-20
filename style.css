@@ -124,8 +124,12 @@ nav a {
     height: 80px ;
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 230, 243);
+    background-color: rgba(40, 26, 53, 0.733);
     filter: invert(1%) opacity(50%);
+}
+
+#spotify-frame iframe{
+    width: 1200px;
 }
 
 /** SECTION - GENERAL **/
@@ -663,6 +667,10 @@ nav a {
     #audio audio {
         width: 350px;
         height: 70px ;
+    }
+
+    #spotify-frame iframe{
+        max-width: 320px;
     }
 
     #one img {
