@@ -109,7 +109,10 @@ nav a {
 
 
 /** VIDEO **/
-
+#youtube-frame iframe {
+    width: 800px;
+    height: 450px;
+}
 
 
 /** AUDIO **/
@@ -611,6 +614,7 @@ nav a {
 
         justify-content: center;
         margin-left: 0;
+        height: 25rem;
     }
 
 
@@ -663,6 +667,13 @@ nav a {
         height: 65rem;
     }
 
+    /** VIDEO **/
+    #youtube-frame iframe {
+        width: 360px;
+        height: 240px;
+    }
+    
+
     /** AUDIO **/
     #audio audio {
         width: 350px;
@@ -670,7 +681,7 @@ nav a {
     }
 
     #spotify-frame iframe{
-        max-width: 320px;
+        max-width: 400px;
     }
 
     #one img {
